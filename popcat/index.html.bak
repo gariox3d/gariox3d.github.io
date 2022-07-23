@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <title>Pop Cat</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="description" content="Ini adalah Situs Web sederhana yang saya buat/Rizky ,memunculkan pop cat di ponsel atau desktop Anda.">
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1.0, maximum-scale=1.0,
+        user-scalable=0'>
+
+    <meta property="og:title" content="Pop Cat || RizkyFdlh" />
+    <meta property="og:description" content="Ini adalah Situs Web sederhana yang saya buat/Rizky ,memunculkan pop cat di ponsel atau desktop Anda." />
+    <meta property="og:image" content="resources/close.png" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="index" />
+    <meta name="twitter:title" content="Pop Cat || Rizky Fdlh" />
+    <meta name="twitter:description" content="Ini adalah Situs Web sederhana yang saya buat/Rizky ,memunculkan pop cat di ponsel atau desktop Anda." />
+    <meta name="twitter:image" content="resources/close.png" />
+
+    <style>
+        * {
+            margin: 0;
+
+        }
+
+        body {
+            min-width: 100vw;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            display: flex;
+        }
+
+        img {
+            height: 90vh;
+            width: 80vw;
+            max-width: 800px;
+            max-height: 900px;
+            margin: auto;
+            pointer-events: none;
+            -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+            -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+        }
+
+        #links {
+            flex: 100%;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        #links a:first-child {
+            margin-right: 20px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            img {
+                max-height: 500px;
+            }
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLQP9MZLTT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VLQP9MZLTT');
+    </script>
+
+</head>
+<body>
+<img id="cat" src="resources/close.png" alt="Closed cat">
+<div id="links">
+    <a target="_blank" href="https://popcat.click/">Pop Cat resmi</a>
+    <a target="_blank" href="https://wa.me/6282387804410">Pemilik</a>
+
+</div>
+</body>
+
+
+<script>
+    let audio = new Audio('resources/sound.mp3');
+    let div = document.getElementById('cat')
+
+    let timerId;
+    let clickTime;
+
+    document.addEventListener('keydown', e => pop())
+    document.addEventListener('click', e => {
+        pop()
+    })
+
+
+    document.addEventListener('touchend', e => {
+        if (!timerId) return;
+
+        if (clickTime && new Date().getTime() - clickTime > 1000 ) e.preventDefault();
+
+        clearInterval(timerId);
+        timerId = null;
+    })
+
+    document.addEventListener('touchstart', e => {
+        if (timerId) return;
+        clickTime = new Date().getTime();
+        timerId = setInterval(() => {
+            pop();
+        }, 200)
+    })
+
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('popcat/sw-2.js', {scope: '/'}).then(function (registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function (err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+
+    const pop = () => {
+
+
+        audio.play();
+        div.src = 'resources/open.png'
+        setTimeout(() => {
+            div.src = 'resources/close.png'
+        }, 100)
+
+
+    }
+
+</script>
+
+</html>

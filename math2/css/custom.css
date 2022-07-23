@@ -1,0 +1,173 @@
+@keyframes countdown {
+    0%   {background-color:green; width: 100%}
+    25%  {background-color:green; width: 75%}
+    50%  {background-color:greenyellow; width: 50%}
+    75%  {background-color:yellow; width: 25%}
+    90% {background-color:red; width: 10%}
+    100% {background-color:red; width: 0%}
+}
+@font-face {
+    font-family: 'calculatorFont';
+    src: url('../font/digital-7.ttf');
+}
+body{
+    font-size: 4vh !important;
+    color: white !important;
+    background-color: cadetblue !important;
+}
+.begin, .calculator{
+    border-radius: 5%;
+    margin-top: 2em;
+    background-color: #d5e9ef;
+    background: #d5e9ef; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#d5e9ef, #c9d7db, #c9d7db); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d5e9ef, #c9d7db, #c9d7db); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d5e9ef, #c9d7db, #c9d7db); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d5e9ef, #c9d7db, #c9d7db); /* Standard syntax */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.box{
+    padding-top: 25px;
+}
+.buttons{
+    padding-top: 5vh;
+    background-color: #c9d7db;
+}
+.empty{
+    height: 10vh;
+}
+ .light{
+    width: 4vh;
+    height:4vh;
+    text-align: center;
+    line-height: 9vh;
+    border-radius: 50%;
+    display: inline-block;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.help{
+    font-size: 4vh !important;
+    background-color:#fb3939 !important;
+}
+.info{
+    font-size: 4vh !important;
+    background-color: #8ef2ff !important;
+}
+.help:hover{
+    background-color: #e43535 !important;
+}
+.info:hover{
+    background-color: #8eecf8 !important;
+}
+.help:active{
+    background-color: #c33232 !important;
+}
+
+.info:active{
+    background-color: #87e2ee !important;
+}
+.keypad{
+    cursor: default;
+    color: #000000;
+    font-size: 7vh;
+    width: 11vh;
+    height:7vh;
+    text-align: center;
+    line-height: 6.5vh;
+    margin: 5px;
+    border-radius: 20%;
+    border-width: 1px;
+    border-color: gray;
+    background-color: #ffffff; /*#f6ff8e;*/
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
+}
+.keypad:hover{
+    background-color: #ececec; /*#e9f288;*/
+}
+.keypad:active{
+    background-color: #dedede; /*#e1e986;*/
+    -ms-transform: translate(1px, 1px); /* IE 9 */
+    -webkit-transform: translate(1px, 1px); /* Safari */
+    transform: translate(1px, 1px);
+}
+.timer-box{
+    height: 5vh;
+    padding: 0px;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    padding: 0px !important;
+}
+.timer {
+    height: 4.85vh;
+    animation-name: countdown;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+.centerBlock{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#equation{
+    font-family: 'calculatorFont'!important;
+    font-size: 4vh;
+    background-color: #d4ed9e;
+    border: 4px solid #c8e094;
+    color: #000000;
+    text-align: right;
+}
+#equation > span{
+    display: inline-block;
+}
+.text-center {
+   text-align:center
+}
+.owner{
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 3vh;
+    color: #000000;
+}
+#correct{
+    background-color: #308c19;
+    margin: 5px;
+}
+#wrong{
+    background-color: #8c1922;
+    margin: 5px;
+    float: right;
+}
+.tooltip-inner {
+    font-size: 2vh;
+}
+.modal-content{
+    color:black;
+    font-size: 2vh;
+}
+#gameTitleLabel{
+    color:black;
+    font-size: 2.5vh;
+}
+.glow-green{
+    background-color : rgba(0,255,0,1) !important;
+    -webkit-box-shadow: 0px 0px 26px 2px rgba(0,255,0,1);
+    -moz-box-shadow: 0px 0px 26px 2px rgba(0,255,0,1);
+    box-shadow: 0px 0px 26px 2px rgba(0,255,0,1);
+}
+.glow-red{
+    background-color : rgba(255,0,0,1) !important;
+    -webkit-box-shadow: 0px 0px 26px 2px rgba(255,0,0,1);
+    -moz-box-shadow: 0px 0px 26px 2px rgba(255,0,0,1);
+    box-shadow: 0px 0px 26px 2px rgba(255,0,0,1);
+}
