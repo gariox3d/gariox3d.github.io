@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>This Rest Api</title>
+    <link rel="stylesheet" href="/rest-api/style.css">
+    <link rel="icon" href="https://telegra.ph/file/0630fcdb51ed0d7d16a2a.jpg" type="image/jpg">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1014.0" data-gr-ext-installed="">
+    <img id="userPhoto" src="https://telegra.ph/file/0630fcdb51ed0d7d16a2a.jpg" alt="User Photo">
+    
+    <a href="https://www.instagram.com/rizkyfadilah8_/" id="userName">@rizkyfadilah8_</a>
+    <div id="links">
+        <a class="link" href="https://rizkyfadilah.herokuapp.com">Rizky (Mati)</a>
+    </div>
+    <div id="links">
+        <a class="link" href="https://man-api.herokuapp.com/">Manxtodd</a>
+    </div>
+<div id="links">
+        <a class="link" href="https://rikka-api.herokuapp.com/">Caliph71</a>
+    </div>
+    <div id="links">
+        <a class="link" href="https://jarxr.xyz/">JarXr</a>
+    </div>
+    <div id="links">
+        <a class="link" href="https://wa.me/6282255123081?text=Bot">Bot WhatsApp</a>
+    </div>
+
+    <!-- Javascript -->
+    <script src="./rest-api/jquery.min.js.download"></script>
+    <script src="./rest-api/index.js.download"></script>
+
+</body></html>
