@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ERROR-MD Bot</title>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+  <body onload="init()">
+    <audio id="myAudio">
+      <source src="assets/music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="myOpening">
+      <source src="assets/opening.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="preload">Wait..</div>
+    <div class="vidcont">
+      <div class="divvideo">
+        <video id="myVideo" width="100%" height="100%">
+          <source src="assets/video.mp4" type="video/mp4" />
+          Your browser doe`s not support HTML5 video.
+        </video>
+      </div>
+    </div>
+    <img src="assets/wp3.jpg" />
+    <div class="container">
+      <div class="myclock">
+        <div class="myakun" id="nama">
+          <span id="spannama3" onclick="gantinama()"></span>
+        </div>
+        <div class="myakun reset" onclick="reverse()">Reset</div>
+        <div class="myakun" onclick="toggleFullscreen()">Fullscreen</div>
+        <div class="contjam">
+          <div class="jam">-:-</div>
+          <div class="tanggal">-</div>
+          <div class="ucapan" onclick="carigoogle()"><span id="spannama2"></span></div>
+          <a href="https://api.whatsapp.com/send?phone=+916207142994&text=Halo">
+        <button style="background:#32C03C;vertical-align:center;height:36px;border-radius:5px">
+     Click Here</button></a>
+        </div>
+      </div>
+      <div class="mywindow" id="myform">
+        <div class="mycontrol">
+          <div class="myclose"></div>
+          <div class="mymini"></div>
+          <div class="mymax"></div>
+        </div>
+        <div class="myheader">
+         Welcome
+        </div>
+        <div class="mybody">
+          <div class="mytitle">
+            Type Your Name Before Entering The Web!
+          </div>
+          <div class="mycontent">
+            <div>Your name</div>
+            <input class="mytext" type="text" id="mynama" name="nama" required />
+          </div>
+          <div class="mybutton">
+            <div class="mybuttonyes" onclick="mywrite()">Done</div>
+          </div>
+        </div>
+        <a href="https://gariox3d.github.io/docs">
+        <button style="background:#00FFFF;vertical-align:right;height:36px;border-radius:5px">Back</button></a>
+      </div>
+      <div class="mywindow myanimated myhide" id="mywindow">
+        <div class="mycontrol">
+          <div class="myclose" onclick="reverse()"></div>
+          <div class="mymini"></div>
+          <div class="mymax"></div>
+        </div>
+        <div class="myheader" id="mywindowheader">Welcome <span id="spannama"></span> User!</div>
+        <div class="mybody">
+          <div class="mytitle">
+            Gariox 3D
+          </div>
+          <div class="mycontent">
+Want To Know Password? Watch the video until it's finished! Password at the end of the video!
+          </div>
+          <div class="mybutton">
+            <div class="mybuttonno" onmouseover="move()" onclick="move2()">Lazy</div>
+            <div class="mybuttonyes" onclick="playVid()">Oke</div>
+          </div>
+        </div>
+        <div class="myresize"></div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/index.min.js"></script>
+  </body>
+</html>

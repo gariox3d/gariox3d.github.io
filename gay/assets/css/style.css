@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cute Font', cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: #1e1823;
+    color: white;
+}
+
+.memory-game{
+    height: 640px;
+    width: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.card {
+    height: calc(33.333% - 10px);
+    width: calc(25% - 10px);
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+    transform: scale(1);
+    transform-style: preserve-3d; /* Não deixa o elemento achatado no plano 2D*/
+    transition: transform .9s;
+}
+
+.card:active{
+    transform: scale(0.97);
+    transition: transform .3s;
+}
+
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    transform: rotateY(180deg);
+}
+
+/* Flip Card Animation */
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+.tituloLogo {
+    padding-top: 4%;
+    padding-left: 10%;
+}
