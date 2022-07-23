@@ -1,0 +1,131 @@
+
+.gameArea {
+  position: absolute;
+  width: 623px;
+  height: 623px;
+  left: 30%;
+  margin: 0 auto;
+  border: 2px solid black;
+  font-family: monospace;
+}
+
+#canvas {
+  position: absolute;
+  background-color: rgb(46, 58, 58);
+  border: 1px solid rgb(66, 43, 1);
+  margin: 0 auto; 
+}
+
+.infoDashboard {
+  position: fixed;
+  left: 30%;
+  width: 623px;
+  height: 623px;
+  background-color: rgba(10, 10, 10, 0.5)
+}
+
+.textArea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.textArea div {
+  text-align: center;
+}
+
+.heading {
+  font-size: 20px;
+}
+
+.line1, .line2 {
+  font-size: 15px;
+}
+
+.additionalOptions{
+  position: absolute;
+  display: flex;
+  width: 624px;
+  height: 40px;
+  border: 1px solid rgb(66, 43, 1);
+  top: 633px;
+  left: 30%;
+}
+
+.score {
+  position: absolute;
+  bottom: 11px;
+  right: 10px;
+  /* right: 40px; */
+  color: black;
+}
+
+.current-speed{
+  position: absolute;
+  bottom: 11px;
+  right: 100px;
+  color: black;
+}
+
+/* Option for going through walls */
+/* TODO: add speed/walls */
+.goThroughWalls{
+  position: absolute;
+ bottom: 11px;
+  margin-left: 150px;
+}
+
+.dropbtn{
+  background-color: #ffffff;
+  font-size: 16px; 
+  border: none;
+  outline: none;
+}
+
+.dropdown  {
+  margin-top: 11px;
+  margin-left: 12px;
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: rgb(17, 3, 66);
+  float: left;
+  height: 150px;
+}
+
+a:hover, .dropdown:hover .dropbtn {
+  /* background-color: rgb(132, 148, 177); */
+}
+
+.dropbtn:hover{
+cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+  background-color: #faf7f7;
+  width: 115px;
+  box-shadow: 10px 11px 5px 3px rgba(11, 43, 223, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(53, 29, 29);
+  padding: 10px 10px;
+  text-decoration: dashed;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(184, 195, 238);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
