@@ -1,0 +1,14 @@
+<p id="info"><font face="bold" size="6" font="" style="text-shadow: 0px 0px 30px green;" color="white">TEAM ERROR 404 </font> _</p>
+     <center><font face="courier new" size="3" font style="text-shadow: 0px 0px 30px red;" color="white">If God Is On Your Side<br></font>
+<center><font face="courier new" size="3" font style="text-shadow: 0px 0px 30px red;" color="white">Believe that no one can bring you down<br></font>
+<center><font face="courier new" size="3" font style="text-shadow: 0px 0px 30px red;" color="white">~ Gariox 3D</font>
+<div class="wrapper">
+      <div class="search-input">
+        <a href="" target="_blank" hidden></a>
+        <input type="text" placeholder="Tap to search..">
+        <div class="autocom-box">
+          <!-- here list are inserted from javascript -->
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
